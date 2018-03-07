@@ -3,22 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exemplo1;
+package aula3;
 
 /**
  *
  * @author 16320743
  */
-public class Pessoa {
-    
+public abstract class Empregado implements Pagavel{
     private String nome;
     private String endereco;
-    private String telefone;
+    private long cpf;
     
-    public Pessoa(String nome, String endereco, String telefone) {
+    public Empregado(String nome, String endereco, long cpf) {
         this.nome = nome;
         this.endereco = endereco;
-        this.telefone = telefone;
+        this.cpf = cpf;
     }
 
     public String getNome() {
@@ -37,13 +36,11 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public long getCpf() {
+        return cpf;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setCpf(long cpf) {
+        this.cpf = cpf;
     }
-    
-    
 }

@@ -1,0 +1,86 @@
+CRIAR UMA CLASSE DENOMINADA ULTILITÁRIA
+
+
+	(1) Na classe utilitária criar um método denominado de quantidadePalavrasTexto.
+	A assinatura é dada por:
+
+	int quantidadePalavrasTexto(String texto, String palavra)
+
+		Esse método retorna a quantidade de "palavras" presente no texto. Considerar a diferença entre letra maiuscula e letra minuscula.
+
+
+
+	(2) Escreva um novo metodo para não fazer diferença entre letra maiscula e letra minuscula.
+
+	(3) Método charAt(posicao) --> retira o caracter na posição passada como parâmetro.
+		0  1  2  3  4
+	      s[T][E][S][T][E]
+
+				S.charAt(0) --> retorna a letra "T"
+				S.chatAt(1) --> retorna a letra "S"
+
+	
+	(4) Métodos indexOf e lastIndexOf --> retorna a posição de um caracter ou conjunto (o primeiro que encontrar).
+		0  1  2  3  4
+	     s1[T][E][S][T][E]
+				s1.indexOf("E") --> retorna 1
+				s1.lastIndexOf("E") --> retorna 4
+				s1.indexOf("ES") --> retorna 1
+
+	
+	(5) Método Substring --> retorna parte da String
+		0  1  2  3  4
+	     s2[T][E][S][T][E]
+				s2.Substring(1) --> Retorna a partir da posição 1 "ESTE"
+				S2.substring(1,4) --> Retorna da posição 1 até a posição 3 "EST (É sempre a segunda opção -1)
+
+
+
+
+
+VARIÁVEIS DE INSTÂNCIA E VARIÁVEIS DE CLASSE (variáveis de instância necessitam de um objeto para se atribuir um valor já a de classe não)
+
+
+	Considere o exemplo: 
+
+	public class Aluno
+	{
+		public int codigo;    |
+		private String nome;   |---> Variaveis de instância.
+		private double nota;   |
+
+		public static int qtdAluno; ---> Variável de Classe.
+	}
+
+	aluno1.codigo = 100;
+	aluno1.qtdAluno = 2;
+	Aluno.qtdAluno = 5;
+
+
+
+	Criar objetos a partir da Classe Aluno
+
+	Aluno aluno1 = new Aluno();
+	Aluno aluno2 = new Aluno();
+	Aluno aluno3 = new Aluno();
+
+
+
+MÉTODOS DE INSTÂNCIA E MÉTODOS DE CLASSE (O método de instãncia necessita de um objeto para poder existir, já o de classe não)
+
+
+	public static int getQtdAluno()
+	{
+		return qtdAluno;
+	}
+
+	Aluno.getQtdAluno();
+	aluno1.getQtdAluno();
+					
+
+	*Em um método de classe eu não posso acessar atributo de instância, mas dentro de um metodo de instância eu posso acessar atributo de classe.
+
+
+	
+
+	

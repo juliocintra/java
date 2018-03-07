@@ -1,0 +1,17 @@
+Considere o exemplo:
+
+	public class Aluno
+	{
+		private int codigo;   |
+		private String nome;  |--> Variáveis de instância
+		private double nota;  |
+
+                                                  |
+		private static int qtdAluno;      |--> Variáveis de Classe
+		private static double somaNotas;  |
+	}
+
+	(1) Criar uma classe que coloca as notas pros alunos.
+	(2) A variável qtdAluno guarda o número de alunos.
+	(3) A varável somaNotas, mantém no sistema atualizado as notas dos alunos.
+	(4) No final de tudo mostra a média geral de todos os alunos.

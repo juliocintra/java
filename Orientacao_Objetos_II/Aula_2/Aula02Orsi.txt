@@ -1,0 +1,87 @@
+19/02/2018
+
+Aula de hoje classe String.
+
+
+
+String
+   -----> Classe (dados + métodos)
+		    ---------> Conjuntos de caracteres
+___________________________________________________________
+
+String s = "POO";
+
+A classe String possui vários construtores:
+	String s = new String();
+		---> Quando eu crio uma String com o construtor vazio se cria uma String vazia.
+
+	String s1 = new String("POO");
+		---> O conteudo de s1 é POO.
+
+	String s2 = new String(s1);
+
+
+
+1) Metodo lenght() = retorna o número de caracteres da String.
+
+2) Metodo equals() = ultilizado para comparar duas Strings. retorna true se são iguais. Retorna false se são diferentes. (faz diferença se são maiusculas ou minusculas).
+	--->Sempre ultilizar variavel.equals() pois nem sempre o == "igual igual" funciona.
+
+3) Metodo equalsIgnoreCase() = Não faz diferença entre letra maiúscula e minúscula.
+
+Você pode usar literais para a compração
+|
+| boolean b;
+| b = "POO".equals(s1);
+| System.out.println("Resultado do Teste: " + b);
+|
+
+Pool de Strings
+
+	Java mantém um repositório (pool) de tadas as LITERAIS STRING de um programa.
+	Literal = aquelas informações enter aspas.
+
+
+	(1) String str1 = new String("Teste");
+	(2) String str2 = new String("Teste");
+
+
+
+Explicação do POOL (IMAGEM EM ANEXO).
+_________________________________________________________________________________________________________________
+
+
+Considere o exemplo:
+
+
+String str1 = new String("Teste");
+String str2 = new String("Teste");
+String str3 = "Teste";
+String str4 = "Teste";
+
+
+A Stre3 e Str4 está referenciado o endereço de memória da "obj1" que ele colocou no POOL.
+
+"==" -> Compara endereços de memoria.
+
+__________________________________________________________________________________________________________________
+
+Método Split --> Divide uma String em várias outras Strings. O método  retorna um vetor de String. Ultiliza um caracter como separador.
+
+String datas = new String ("19/02/2018");
+String vet[] = datas.split("/");
+	Teremos o seguinte:
+	vet[0] = "19";
+	vet[1] = "02";
+	vet[2] = "2018";
+
+
+
+
+
+
+
+
+	
+
+	
