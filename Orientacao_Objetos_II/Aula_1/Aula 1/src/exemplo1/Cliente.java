@@ -9,14 +9,15 @@ package exemplo1;
  *
  * @author 16320743
  */
-public class Cliente{
+public class Cliente extends Pessoa{
     
     private double credito;
     private double debito;
     private String dataPagamento; 
     private Pessoa pessoa;
     
-   public Cliente(Pessoa pessoa, double credito, double debito, String dataPagamento){
+   public Cliente(String nome, String endereco, String telefone, Pessoa pessoa, double credito, double debito, String dataPagamento){
+       super(nome, endereco, telefone);
        this.pessoa = pessoa;
        this.credito = credito;
        this.debito = debito;

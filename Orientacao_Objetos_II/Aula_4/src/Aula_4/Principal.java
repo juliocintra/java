@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula3;
+package Aula_4;
 
 /**
  *
@@ -35,7 +35,7 @@ public class Principal {
     public static void main(String[] args) {
         Principal p = new Principal();
         p.adicionaPagavel(new EmpregadoMensalista("Juão", "Av. Brasil", 370000004, 1551));
-        p.adicionaPagavel(new EmpregadoComissaoAssalariado("Ana", "Rua professor", 1, 8, 10, 10));
+        p.adicionaPagavel(new EmpregadoComissaoAssalariado("Ana", "Rua professor", 123456, 8, 1000, 10));
         p.adicionaPagavel(new NotaFiscal(10, "Note", 2, 1350));
         p.mostraPagavel();
     }

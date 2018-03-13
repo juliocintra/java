@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula3;
+package Aula_4;
 
 /**
  *
@@ -38,7 +38,7 @@ public class EmpregadoComissao extends Empregado{
     
     public double getValorAPagar() {
         double salario;
-        salario = (getPercentutalComissao() / 100) * this.totalVendas;
+        salario = (this.percentutalComissao / 100) * this.totalVendas;
         return salario;
     };
     

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula3;
+package Aula_4;
 
 /**
  *
@@ -13,3 +13,4 @@ public interface Pagavel {
     
     public abstract double getValorAPagar();
 }
+
