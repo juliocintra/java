@@ -1,0 +1,21 @@
+criar uma classe que contenha o programa principal e um conjunto de metodos de classes (modificador static);
+Denominar a classe de MapaProduto. Todos os metodos de classe deve receber um objeto HashMap<String, Float>.
+Os metodos presentes na classe sao: 
+	void incluirProduto - 	esse metodo alem, além do HashMap, recebe como parametro o nome (String) 
+			      	e o preco (float) de um produto e adiciona o par String-float (representando
+			      	o nome e o preco do produto) no mapa. O par só é adicionado no mapa se a chave
+			      	ja existir, dar mensagem explicativa sobre o ocorrido;
+
+	void modificaPreco -	Ale do HashMap, esse método recebe como parametros o nome e o preco do Produto.
+				Ele tem como finalidade alterar o preco de um produto. Assim, o preco só
+				poderia ser alterado, se a chave existir no mapa. Se a chave nao existir no mapa,
+				dar mensagem explicativa do ocorrido.
+
+	void mostraProduto - 	Mostra os produtos presentes no mapa.
+
+	void excluiProduto - 	Alem do HashMap, esse metodo recebe como parametro o nome do produto. Se o produto
+				existir no mapa ele deve ser retirado. Se o produto nao existir no mapa, dar
+				mensagem explicativa do ocorrido.
+	
+No programa principal instanciar um HashMap<String, FLoat>. A chave é o nome do produto e o valor é o preco do produto.
+Invocar os metodos presentes na classe e a cada chamada, mostrar o mapa resultante.	 

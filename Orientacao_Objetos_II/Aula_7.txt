@@ -1,0 +1,3 @@
+a classe ArrayList implementa a Interface List
+toda classe que implementa um interface, eu posso declarar uma variavel do tipo List (interface)
+recebendo a classe ArrayList
