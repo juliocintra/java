@@ -10,6 +10,24 @@ package aula.pkg02;
  * @author 15282783
  */
 public class Ultilitaria {
+ 
+    public static int quantidade(String texto) {
+        int qtde = 0;
+        String vet[];
+        
+        if (texto.length() == 0) {
+            System.out.println("ERRO");
+            return qtde;
+        }
+        else {
+            vet = texto.split(" ");
+            
+            for (int i = 0; i < vet.length; i++) {
+                qtde++;
+            }
+        }
+        return qtde;
+    }
     
     public static int quantidadePalavrasTexto(String texto, String palavra)
     {
@@ -48,5 +66,6 @@ public class Ultilitaria {
         return quantidade;
     }
     
-    
+   
+                
 }

@@ -54,6 +54,9 @@ public class AULA02 {
         System.out.println("Vet[0]: " + vet[0]);
         System.out.println("Vet[1]: " + vet[1]);
         System.out.println("Vet[2]: " + vet[2]);
+        
+        String texto = "julio cesar cintra";
+        
     }
     
 }
